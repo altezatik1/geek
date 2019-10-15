@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}  
+
+.container {
+     width: 1280px;
+      margin: 0 auto;
+}
+
+.main_header {
+    width: 100%;
+    background-color: #445162;
+    padding:50px;
+    box-sizing:border-box;
+    color:white;
+    
+}
+.main_header:after {
+    content: "";
+    display: block;
+    width:100%;
+    clear:both;
+}
+.main_header_wrp {
+    width: 460px;
+    float:left;
+}
+
+.main_header_title {
+    margin:0 0 0 0;
+    font-size: 60px;
+    font-weight: 400;
+}
+.main_header_list {
+    padding-top: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+     margin:0 0 0 0;
+    
+}
+.main_header_item {
+     margin:0 0 0 0;
+     list-style-type: none;
+     position:relative;
+}
+.main_header_item:before {
+    content:"";
+    display:block;
+    width: 25px;
+    height: 19px;
+    position:absolute;
+    top:8px;
+    left:-40px;
+    background-image: url(../img/check_icon.png);
+}
+.main_header_img {
+    display: block;
+    width: 469px;
+    min-height: 214px;
+    background-color: white;
+    float:right;
+}
+.about {
+    width: 100%;
+    padding:50px;
+    box-sizing:border-box;
+}
+.about:after {
+    content: "";
+    display: block;
+    width:100%;
+    clear:both;
+}
+.about_text {
+    width: 659px;
+    float:left;
+    color: #445161;
+}
+.about_title {
+    margin:0;
+    font-family: "Arial";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;  
+}
+
+.about_video {
+    background-color: #445161;
+    float:right;
+}
+.dignity {
+     width: 100%;
+     padding: 50px;
+     background-color: #f5f5f5;
+     box-sizing: border-box;
+}
+.dignity:after {
+      content: "";
+      display: block;
+      width: 100%;
+      clear: both;
+}
+.dignity_title {
+      display: block;
+      margin: 0 0 24px 0;
+      text-align: center;
+        color: #445161;
+    font-family: "Arial";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+      line-height: 1.2;
+}
+.dignity_list {
+  width: 540px;
+  margin: 0;
+  padding: 0 0 0 46px;
+  list-style-type: none;
+  float: left;
+}
+
+.dignity_list:last-child{
+  float: right;
+}
+
+.dignity_list_item {
+  margin: 0 0 35px 0;
+  position: relative;
+}
+
+.dignity_list_item:nth-child(3) {
+  margin: 0;
+}
+.dignity_list_item:before {
+  content: "+";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: #445161;
+  color: white;
+  font-size: 38px;
+  text-align: center;
+  line-height: 32px;
+  position: absolute;
+  top: 4px;
+  left: -46px;
+}
