@@ -107,15 +107,15 @@ body {
       clear: both;
 }
 .dignity_title {
-      display: block;
-      margin: 0 0 24px 0;
-      text-align: center;
-        color: #445161;
+    display: block;
+    margin: 0 0 24px 0;
+    text-align: center;
+    color: #445161;
     font-family: "Arial";
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
-      line-height: 1.2;
+    line-height: 1.2;
 }
 .dignity_list {
   width: 540px;
@@ -166,6 +166,7 @@ body {
   clear: both;
 }
 .screen_title  {
+  margin: 0;
   width: 100%;
   text-align:center;
   color: #445161;
@@ -173,7 +174,7 @@ body {
   font-size: 30px;
   font-weight: 400;
   line-height: 36px;
-  padding: 0 0 35 0;
+  margin-bottom:35px;
 }
 
 .screen_item {
@@ -256,7 +257,7 @@ body {
   font-size: 30px;
   font-weight: 400;
   line-height: 36px;
-  padding: 0 0 35px 0;
+  margin-bottom:35px;
 }
 .reviews_item {
   width: 574px;
@@ -331,7 +332,7 @@ margin:0;
   font-weight: 400;
   line-height: 36px;
   margin: 0;
-  padding-bottom:30px;
+  margin-bottom:30px;
 }
 .flex {
   display:flex;
@@ -347,14 +348,9 @@ margin:0;
 .buyit_item:last-child {
    margin-right: 0;
 }
-.buyit_item_title_div{
-  width:100%;
-  min-height: 51px;
-  margin:0;
-  padding-top:10px;
-  box-sizing: border-box;
-}
+
 .buyit_item_title {
+  display:block;
   width:100%;
   text-align: center;
   color: white;
@@ -362,9 +358,14 @@ margin:0;
   font-size: 24px;
   font-weight: 400;
   line-height: 30px;
-  margin: 0;
+  min-height: 51px;
+  margin:0;
+  padding-top:10px;
+  box-sizing: border-box;
+  
 }
 .buyitem_item_price {
+  display:block;
   width:100%;
   text-align: center;
   background-color:white;
@@ -374,7 +375,7 @@ margin:0;
   font-weight: 400;
   line-height: 30px;
   padding:18px 0 18px 0;
-  min-height: 71px;
+  min-height: 71px
   box-sizing: border-box;
 }
 .buyitem_list {
@@ -388,13 +389,18 @@ margin:0;
   margin: 0;
   padding:15px 0 15px 20px;
 }
+.buyitem_list_item {
+  padding: 0;
+}
 .buyitem_form {
+  display:block;
   width: 100%;
   text-align: center;
   margin-top:15;
   padding-bottom:20px;
 }
 .buyitem_button {
+  outline: none;
   width: 260px;
   height: 40px;
   background-color: #ffffff;
@@ -407,8 +413,13 @@ margin:0;
   border:0;
 }
 .buyitem_button:hover {
- 
-  background-color: #f5f5f5;
+  background-color: gray;
+  color: white;
+}
+
+.buyitem_button:active {
+  background-color:  #ffffff;
+  color:  #445162;
 }
 
 .main_footer {
@@ -428,7 +439,7 @@ margin:0;
   font-size: 30px;
   font-weight: 400;
   line-height: 36px;
-  padding-bottom:31px;
+  margin-bottom:31px;
 }
 .footer_flex {
   display:flex; 
@@ -438,6 +449,7 @@ margin:0;
   padding:0 45px 0 200px;
 }
 .footer_input {
+  outline:none;
   display:block;
   width: 490px;
   min-height: 40px;
@@ -458,7 +470,24 @@ margin:0;
   min-height:170px;
   vertical-align: top;
 }
+
+input[placeholder],
+textarea[placeholder] {
+  text-overflow:ellipsis;
+  font-family: Arial;
+  color:  #445162;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}  
+
+.footer_input:hover {
+  background-color: gray;
+  color: white;
+}
 .footer_form_submit {
+  outline: none;
   display:block;
   width: 140px;
   height: 40px;
@@ -474,10 +503,14 @@ margin:0;
   padding: 0;
 }
 .footer_form_submit:hover {
- 
-  background-color: #f5f5f5;
+  background-color: gray;
+  color: white;
 }
 
+.footer_form_submit:active {
+  background-color:  #ffffff;
+  color:  #445162;
+}
 .footer_mess {
   margin-left: 34px;
 }
